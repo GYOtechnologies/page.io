@@ -1,0 +1,128 @@
+* { 
+    font-family: 'Fredoka One', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background: url(./Imagenes/Frame\ 2\ \(1\).svg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.brand{
+    
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0%;
+    margin-top: 50px;
+    margin-left: 10px;  
+}
+.brand .imgBrand {
+   /* display: inline-block;
+   position: relative;
+   width: 50px;
+   bottom: 200px;
+   left: 60px; */
+
+   width: 4%;
+   height: auto;
+   margin-right: 10px;
+}
+
+.brand h1 {
+    font-size: 15px;
+
+}
+
+
+.contactanos{ 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+h2 {  
+    font-size: 40px;
+    background-image: linear-gradient(45deg,#4B02EF,  #3903C4, #29039E, #1D0380, #130468, #130468, #07044D, #06044A);
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+
+p { 
+    line-height: 10px;
+    color:rgb(54, 10, 148); 
+}
+
+
+/* Formulario */
+
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+  }
+  
+  .form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #DA1414;
+  }
+
+
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+  }
+  .form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+  }
+
+  input{
+    margin: 20px 0px 0px 0px;
+  }
+  
+  
+  .contact {
+    position: absolute;
+    bottom: 5%;
+    margin-left: 10px;
+    color:rgb(54, 10, 148); 
+  }
+  
+  .btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #858C94;
+    background-color: #ffffff;
+    margin: 20px 0px 0px 0px;
+    color:rgb(54, 10, 148);
+    cursor: pointer;
+  }

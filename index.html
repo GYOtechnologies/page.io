@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="GYO TECHNOLOGIES es una empresa dedicada a soluciones informatica">
+  <meta name="robots" content="index,follow">
+  <title>GYO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+
+
+      <div class="brand">
+        <img class="imgBrand" src="./Imagenes/Group 304 (1).png">
+
+        <h1><a>GYO TECHNOLOGIES </a> </h1>
+
+      </div>
+
+      <div class="contactanos">
+        <h2><a> Nuestro sitio web estara </a></h2><br>
+        <h2><a> disponible muy pronto.</a></h2><br>
+        <p><a> Estaremos trabajando duro para terminar de desarrollar este sitio. </a></p><br>
+        <p><a> Registrese a continuacion para recibir actualizaciones y ser notificado</a></p><br>
+        <p><a> cuando lo lancemos!</a></p><br>
+      </div>
+      
+      <section class="contact">
+        <div class="u-wrapper">
+        <div class="contact-content">
+          <form id="form" class="form" action="https://formspree.io/f/xgeqnkok" method="POST">
+            <h3 class="tag"><span>Contactanos</span></h3>
+
+            <input name="name" required type="text" id="name" placeholder="Nombre">
+
+            <input name="email" type="text" id="email" required placeholder="Correo">
+            
+            <button type="submit" class="btn">enviar mensaje</button>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  </main>
+
+
+  <script>
+    const $form = document.querySelector('#form')
+
+    $form.addEventListener('submit', handleSubmit)
+
+   async function handleSubmit(event){
+      event.preventDefault()
+      const form = new FormData(this)
+      const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers:{
+          'Accept': 'application/json'
+        }
+      })
+
+      if(response.ok){
+        this.reset()
+        alert('Gracias por dejarnos su mail')
+      }
+    }
+
+  </script>
+</body>
+
+</html>
