@@ -145,9 +145,9 @@ p {
    }
     }
 
-   @media  (max-width: 430px) {
+   @media screen and (max-width: 767px){
     
-       
+    
    .container{
     background: url(./Imagenes/gyo\ celular.jpg);
     background-size: cover;
